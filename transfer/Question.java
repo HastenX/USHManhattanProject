@@ -2,7 +2,7 @@ package transfer;
 import gui.GUI;
 
 public class Question {
-    private boolean userPressedButton; // Instance-level flag for button press
+    private boolean userPressedButton; 
     private String txt;
     private int seconds;
 
@@ -22,10 +22,10 @@ public class Question {
         GUI gui;
         if (this.seconds != 0) {
             gui = new GUI(txt, seconds);
-            userPressedButton = gui.startGuiWithTimer(txt, seconds);  // Run GUI with timer
+            userPressedButton = gui.startGuiWithTimer(txt, seconds);  
         } else {
             gui = new GUI(txt);
-            userPressedButton = gui.startGui();  // Run GUI without timer
+            userPressedButton = gui.startGui();  
         }
     }
 
