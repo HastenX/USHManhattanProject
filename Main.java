@@ -3,8 +3,7 @@ import transfer.Question;
 
 public class Main {
     public static void main(String[] args) {
-        Question statementOne = new Question("Welcome to my USH Project, where you decide if events-- by which created the atomic bomb-- had happened. Press the button to continue");
-        System.out.println(statementOne.getUserPressedButton());  
+        new Question("Welcome to my USH Project, where you decide if events-- by which created the atomic bomb-- had happened. Press the button to continue");
 
         Question questionOne = new Question("August 2nd, 1939: Albert Einstein HAD written to FDR about the Nazi’s nuclear program, Uranverein, and the letter had reached FDR", 11);
         getAnswer(questionOne, Plausibility.ONE_TRUE, Plausibility.ONE_FALSE);
